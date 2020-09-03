@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://use.typekit.net/nul7hmg.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #595757;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

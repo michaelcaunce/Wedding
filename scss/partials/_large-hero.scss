@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(10, 10vh);
+
+  // Hero header section
+  &__header {
+    grid-column: 2 / 14;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--logo {
+      max-width: 70px;
+
+      @include atMedium {
+        max-width: 100px;
+      }
+    }
+  }
+
+  // Hero image
+  &--image {
+    grid-column: 1 / -1;
+    grid-row: 7 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include atMedium {
+      grid-column: 15 / -1;
+      grid-row: 2 /-1;
+    }
+  }
+
+  // Content section
+  &__content {
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+    z-index: 1;
+
+    @include atMedium {
+      grid-column: 2 / 15;
+      grid-row: 3 / -1;
+    }
+
+    &--title {
+      font-size: 4.5rem;
+
+      @include atLarge {
+        font-size: 7rem;
+      }
+    }
+
+    &--sub {
+      font-size: 2.3rem;
+      margin-top: 2rem;
+      font-family: adorn-smooth-pomander, sans-serif;
+      line-height: 1;
+      color: $mainBlue;
+
+      @include atLarge {
+        font-size: 4rem;
+      }
+    }
+
+    &--h3 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  // Countdown section
+  &--countdown {
+    display: flex;
+    position: absolute;
+    margin: 2em auto;
+
+    &__time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: $mainPink;
+      font-size: 1.5em;
+      min-width: 70px;
+      margin-right: 0.2em;
+      font-weight: 700;
+      padding: 10px 5px 15px;
+      border-radius: 4px;
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

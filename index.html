@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <!-- Main CSS style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Michael and Nicola - Wedding</title>
+    <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel" />
+    <meta name="description" content="Your clarify. One trip away. We create soul restoring journeys that inspire you to be you." />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__header">
+        <img class="hero__header--logo" src="/images/logo2.png" alt="" />
+
+        <!-- Start of navigation -->
+        <div class="navigation">
+          <!-- Start of checkbox hack -->
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+          <div class="navigation__background">&nbsp;</div>
+          <!-- Start of links -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Venue</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Happy Couple</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Our Story</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Timeline</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">People</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Gallery</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">RSVP</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <img class="hero--image" src="images/hero.jpeg" alt="" />
+      <div class="hero__content">
+        <h1 class="hero__content--title">10 Years In The Making</h1>
+        <h2 class="hero__content--sub">Michael & Nicola Are Getting Married</h2>
+        <h3 class="hero__content--h3">October 24th 2021</h3>
+        <div class="hero--countdown">
+          <div class="hero--countdown__time">
+            <div id="day"></div>
+            <span>Days</span>
+          </div>
+          <div class="hero--countdown__time">
+            <div id="hour"></div>
+            <span>Hours</span>
+          </div>
+          <div class="hero--countdown__time">
+            <div id="minute"></div>
+            <span>Minutes</span>
+          </div>
+          <div class="hero--countdown__time">
+            <div id="second"></div>
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bundled.js"></script>
+    <script src="/js/countdown.js"></script>
+  </body>
+</html>
